@@ -1,7 +1,7 @@
 <template>
     <div class="text-right">
     <b-form-group class="form mx-auto">
-      <b-form-input class="number" v-model="number" placeholder="0.00"></b-form-input>
+      <b-form-input type="number" class="number" v-model="number" placeholder="0.00"></b-form-input>
       <p class="saldo">Rp120.000 Available</p>
       <b-input-group size="sm" class="notes mx-auto">
       <b-input-group-prepend is-text>
