@@ -1,6 +1,6 @@
 <template>
     <div>
-    <b-nav vertical class="nav bg-white shadow-sm ml-auto mt-4">
+    <b-nav vertical class="nav ml-auto mt-4">
         <b-nav-item active class="my-2"><b-icon icon="grid" class="mr-3"></b-icon> Dashboard</b-nav-item>
         <b-nav-item class="my-2"><b-icon icon="arrow-up" class="mr-3"></b-icon> Transfer</b-nav-item>
         <b-nav-item class="my-2"><b-icon icon="plus" class="mr-3"></b-icon> Top Up</b-nav-item>
@@ -22,7 +22,7 @@ export default {
     height: 90vh;
     padding: 25px 0;
     position: relative;
-    background: #FFFFFF;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
 }

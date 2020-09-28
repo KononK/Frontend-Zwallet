@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Landing from '../views/Landing'
-import Home from '../views/Home/Home.vue'
+import Index from '../views/Main/Index.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,12 @@ const routes = [
     component: Landing
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
+    path: '/index',
+    name: 'Index',
+    component: Index,
+    children: [{
+
+    }]
   }
 ]
 
