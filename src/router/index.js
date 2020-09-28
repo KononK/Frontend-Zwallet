@@ -9,7 +9,9 @@ import PinSuccess from '../views/Auth/CreatePin/PinSuccess.vue'
 import ForgotPassword from '../views/Auth/ForgotPassword/ForgotPassword.vue'
 import NewPassword from '../views/Auth/ForgotPassword/NewPassword.vue'
 import Main from '../views/Main/index.vue'
-import Transfer from '../views/Main/Transfer/Transfer.vue'
+import Transfer from '../views/Main/Transfer/Index.vue'
+import AddReceive from '../views/Main/Transfer/Transfer/Transfer.vue'
+import Amount from '../views/Main/Transfer/amount/Amount.vue'
 import Home from '../views/Main/Home/Home.vue'
 import Profile from '../views/Main/Profile/Profile.vue'
 import Personal from '../views/Main/Personal/Personal.vue'
@@ -82,7 +84,19 @@ const routes = [ //
       {
         path: 'transfer',
         name: 'Transfer',
-        component: Transfer
+        component: Transfer,
+        children: [
+          {
+            path: 'amount',
+            name: 'Amount',
+            component: Amount
+          },
+          {
+            path: 'addreceive',
+            name: 'Add Receive',
+            component: AddReceive
+          }
+        ]
       },
       {
         path: 'profile',

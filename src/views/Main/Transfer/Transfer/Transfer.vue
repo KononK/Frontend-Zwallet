@@ -1,25 +1,28 @@
 <template>
-<b-col lg="9" class="mt-4">
     <b-row class="no-gutters transfer mx-4 p-4">
         <b-col lg="12">
             <div class="title">Search Receiver</div>
         </b-col>
         <b-col lg="12 mt-2">
-            <b-form-input  class="form-text" v-model="text" placeholder="Search receiver here"></b-form-input>
+            <b-form-input  class="form-text" v-model="text" :placeholder="icon"></b-form-input>
         </b-col>
         <b-col lg="12 mt-2">
             <CardContact/>
         </b-col>
     </b-row>
-</b-col>
 </template>
 
 <script>
-import CardContact from '../../../components/global/CardContact'
+import CardContact from '../../../../components/global/CardContact'
 export default {
   name: 'Transfer',
   components: {
     CardContact
+  },
+  data () {
+    return {
+      icon: '\uf002 Search receiver here'
+    }
   }
 }
 </script>
