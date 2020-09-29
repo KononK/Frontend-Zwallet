@@ -1,25 +1,30 @@
 <template>
     <div class="text-right">
-    <b-form-group class="form mx-auto">
-      <b-form-input type="number" class="number" v-model="number" placeholder="0.00"></b-form-input>
-      <p class="saldo">Rp120.000 Available</p>
-      <b-input-group size="sm" class="notes mx-auto">
-      <b-input-group-prepend is-text>
-        <b-icon icon="pen"></b-icon>
-        </b-input-group-prepend>
-        <b-form-input type="text" class="text" placeholder="Add some notes"></b-form-input>
-        </b-input-group>
-    </b-form-group>
-    <b-button class="button mx-4" variant="info">Continue</b-button>
+        <b-form-group class="form mx-auto">
+        <b-form-input type="number" class="number" v-model="number" placeholder="0.00"></b-form-input>
+        <p class="saldo">Rp120.000 Available</p>
+        <b-input-group size="sm" class="notes mx-auto">
+        <b-input-group-prepend is-text>
+            <b-icon icon="pen"></b-icon>
+            </b-input-group-prepend>
+            <b-form-input type="text" class="text" placeholder="Add some notes"></b-form-input>
+            </b-input-group>
+        </b-form-group>
+        <b-button class="button mx-4" variant="info">Continue</b-button>
+        <ModalPin v-show="ModalShow"/>
     </div>
 </template>
 
 <script>
+import ModalPin from '../../../../../components/global/ModalPin'
 export default {
   name: 'FormAmount',
-  computed: {
-
-  }
+  components: {
+    ModalPin
+  },
+  data: () => ({
+    ModalShow: true
+  })
 }
 </script>
 
