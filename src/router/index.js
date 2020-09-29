@@ -17,6 +17,7 @@ import ChangePin from '../views/Main/ChangePin/ChangePin.vue'
 import NewPin from '../views/Main/ChangePin/NewPin.vue'
 import AddNumber from '../views/Main/PhoneNumber/AddNumber.vue'
 import ManageNumber from '../views/Main/PhoneNumber/ManageNumber.vue'
+import TopUp from '../views/Main/TopUp/TopUp.vue'
 
 Vue.use(VueRouter)
 
@@ -112,6 +113,11 @@ const routes = [ //
         path: 'manage-number',
         name: 'ManageNumber',
         component: ManageNumber
+      },
+      {
+        path: 'topup',
+        name: 'TopUp',
+        component: TopUp
       }
     ]
   }
