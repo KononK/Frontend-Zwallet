@@ -23,7 +23,7 @@ export default {
     ModalPin
   },
   data: () => ({
-    ModalShow: true
+    ModalShow: false
   })
 }
 </script>

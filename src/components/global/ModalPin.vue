@@ -65,16 +65,16 @@ export default {
   display: table-cell;
   vertical-align: middle;
 }
+.modal-content{
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+}
 .modal-dialog {
     letter-spacing: 1px;
     width: 1600px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
     transition: all 0.3s ease-in-out;
-}
-.modal-content{
-    border-radius: 10px;
-    width: 90%;
 }
 .modal-enter {
   opacity: 0;
