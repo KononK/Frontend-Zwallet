@@ -13,6 +13,8 @@ import Transfer from '../views/Main/Transfer/Index.vue'
 import AddReceive from '../views/Main/Transfer/Transfer/Transfer.vue'
 import Amount from '../views/Main/Transfer/amount/Amount.vue'
 import Confirm from '../views/Main/Transfer/Confirm/Confirm.vue'
+import Success from '../views/Main/Transfer/status/Succes.vue'
+import Failed from '../views/Main/Transfer/status/Failed.vue'
 import Home from '../views/Main/Home/Home.vue'
 import Profile from '../views/Main/Profile/Profile.vue'
 import Personal from '../views/Main/Personal/Personal.vue'
@@ -101,6 +103,16 @@ const routes = [ //
             path: 'confirm',
             name: 'Confirm',
             component: Confirm
+          },
+          {
+            path: 'success',
+            name: 'Success',
+            component: Success
+          },
+          {
+            path: 'failed',
+            name: 'Failed',
+            component: Failed
           }
         ]
       },
